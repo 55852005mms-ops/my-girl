@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bestie's World 💖 | Our Beautiful Story & Memories</title>
+  <meta name="description" content="A special place collecting all our outings, gifts, and unforgettable moments dedicated to my forever bestie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Pacifico&family=Nunito:wght@300;400;600;700;800&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✨ Bokeh / String Lights Layer -->
+  <div class="bokeh-layer" aria-hidden="true">
+    <div class="bokeh-container left" id="bokehLeft"></div>
+    <div class="bokeh-container right" id="bokehRight"></div>
+    <canvas id="stringLightsCanvas" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- 🎀 Floating hearts background -->
+  <div class="floating-hearts-bg" id="floatingHeartsBg" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="home">
+    <div class="header-content">
+      <div class="logo-badge">
+        <span class="logo-icon">🌸</span>
+        <span class="logo-text">BESTIE FOREVER ❤️</span>
+        <span class="logo-icon">🌸</span>
+      </div>
+      <h1 class="main-title">Our Beautiful Story &amp; Memories <span class="sparkle">✨</span></h1>
+      <p class="subtitle">A special place collecting all our outings, gifts, and unforgettable moments.</p>
+      <div class="header-divider">
+        <span>💖</span><span class="divider-line"></span><span>💖</span>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#apology" class="nav-link">💌 Letter</a>
+      <a href="#outings" class="nav-link">📸 Outings</a>
+      <a href="#gifts" class="nav-link">🎁 Gifts</a>
+      <a href="#favorites" class="nav-link">✨ Favorites</a>
+      <a href="#bestie-game" class="nav-link">🥺 Are We OK?</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== SECTION B: APOLOGY LETTER ===== -->
+    <section class="section apology-section" id="apology" aria-label="Apology letter section">
+      <div class="section-label">💌</div>
+      <h2 class="section-title">A Message From My Heart</h2>
+      <div class="envelope-wrapper">
+        <div class="envelope-card">
+          <div class="envelope-flap" aria-hidden="true">
+            <div class="flap-heart">💌</div>
+          </div>
+          <div class="letter-body">
+            <div class="letter-decoration top-decoration" aria-hidden="true">
+              <span>✦</span><span>✦</span><span>✦</span>
+            </div>
+            <p class="letter-salutation">To my absolute favorite person in the world,</p>
+            <p class="letter-text">
+              my sister, and my forever bestie. I'm so sorry for making you upset.
+              Life is honestly colorless without your smile and our daily laughs.
+              You know you mean the world to me, and I can't afford to lose my person.
+              Let's wipe the slate clean, because no misunderstanding is bigger than our bond.
+            </p>
+            <p class="letter-closing">I love you, bestie! 💖</p>
+            <div class="letter-decoration bottom-decoration" aria-hidden="true">
+              <span>🌸</span><span>💕</span><span>🌸</span>
+            </div>
+            <div class="letter-signature" aria-hidden="true">
+              <span class="signature-line"></span>
+              <span class="signature-label">Always yours ✨</span>
+            </div>
+          </div>
+        </div>
+        <div class="envelope-glow" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION C1: OUR OUTINGS GALLERY ===== -->
+    <section class="section gallery-section" id="outings" aria-label="Outings photo gallery">
+      <div class="section-label">📸</div>
+      <h2 class="section-title">Our Outings</h2>
+      <p class="section-subtitle">Every place we've been is a memory I treasure</p>
+      <div class="gallery-grid outings-grid">
+
+        <article class="photo-card" id="outing-card-1">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/first%20outing%20at%20el-maadi%20.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">first outing at el-maadi</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-2">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/first%20outing%20at%20el-maadi%202.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">first outing at el-maadi 2</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-3">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/2nd%20outing%20at%20old%20cairo.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">2nd outing at old cairo</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-4">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/2nd%20outing%20at%20old%20cairo%202.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">2nd outing at old cairo 2</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-5">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/3rd%20outing%20at%20EL-Hossary.jpeg.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">3rd outing at EL-Hossary</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-6">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/3rd%20outing%20at%20EL-Hossary%202.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">3rd outing at EL-Hossary 2</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-7">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/3rd%20outing%20at%20EL-Hossary%203.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">3rd outing at EL-Hossary 3</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-8">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/outings/3rd%20outing%20at%20EL-Hossary%204.jpeg" alt="Outing memory" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption">3rd outing at EL-Hossary 4</p>
+        </article>
+
+        <article class="photo-card" id="outing-card-9">
+          <div class="photo-slot">
+            <video class="uploaded-photo" src="images/outings/3rd%20outing%20at%20EL-Hossary%205.mp4" controls style="display:block; opacity:1; width:100%; height:auto;"></video>
+          </div>
+          <p class="photo-caption">3rd outing at EL-Hossary 5</p>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION C2: GIFTS CAROUSEL ===== -->
+    <section class="section gallery-section gifts-section" id="gifts" aria-label="Gifts photo gallery">
+      <div class="section-label">🎁</div>
+      <h2 class="section-title">Gifts You Gave Me</h2>
+      <p class="section-subtitle">Every single one came straight from your heart</p>
+
+      <div class="carousel-wrapper" role="region" aria-label="Gift photos carousel">
+        <button class="carousel-btn prev-btn" id="giftsPrev" aria-label="Previous gift photo">&#8592;</button>
+        <div class="carousel-track-outer">
+          <div class="carousel-track" id="giftsTrack">
+
+            <div class="carousel-slide" aria-label="Gift slide 1">
+              <div class="photo-slot carousel-photo-slot">
+                <img class="uploaded-photo" src="images/gifts/the%20first%20gift%20chocolate%20from%20chocolate.jpeg" alt="Gift 1" style="display:block; opacity:1;" />
+              </div>
+              <p class="photo-caption carousel-caption">the first gift chocolate from chocolate</p>
+            </div>
+
+            <div class="carousel-slide" aria-label="Gift slide 2">
+              <div class="photo-slot carousel-photo-slot">
+                <img class="uploaded-photo" src="images/gifts/3rd%20gift%20(my%20bracelete)%20%20copy.png" alt="Gift 2" style="display:block; opacity:1;" />
+              </div>
+              <p class="photo-caption carousel-caption">3rd gift (my bracelete)</p>
+            </div>
+
+            <div class="carousel-slide" aria-label="Gift slide 3">
+              <div class="photo-slot carousel-photo-slot">
+                <img class="uploaded-photo" src="images/gifts/2nd%20gift%20(first%20time%20someone%20give%20me%20letter).jpeg" alt="Gift 3" style="display:block; opacity:1;" />
+              </div>
+              <p class="photo-caption carousel-caption">2nd gift (first time someone give me letter)</p>
+            </div>
+
+            <div class="carousel-slide" aria-label="Gift slide 4">
+              <div class="photo-slot carousel-photo-slot">
+                <img class="uploaded-photo" src="images/gifts/2nd%20gift%20(first%20time%20someone%20give%20me%20letter)%202nd%20page.jpeg" alt="Gift 4" style="display:block; opacity:1;" />
+              </div>
+              <p class="photo-caption carousel-caption">2nd gift (first time someone give me letter) 2nd page</p>
+            </div>
+
+            <div class="carousel-slide" aria-label="Gift slide 5">
+              <div class="photo-slot carousel-photo-slot">
+                <img class="uploaded-photo" src="images/gifts/2nd%20gift%20(first%20time%20someone%20give%20me%20letter)%203rd%20page.jpeg" alt="Gift 5" style="display:block; opacity:1;" />
+              </div>
+              <p class="photo-caption carousel-caption">2nd gift (first time someone give me letter) 3rd page</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" id="giftsNext" aria-label="Next gift photo">&#8594;</button>
+      </div>
+      <div class="carousel-dots" id="giftsDots" aria-label="Carousel position indicators"></div>
+    </section>
+
+    <!-- ===== SECTION C3: FAVORITE PICTURES ===== -->
+    <section class="section gallery-section" id="favorites" aria-label="Favorite pictures gallery">
+      <div class="section-label">✨</div>
+      <h2 class="section-title">Pictures I Love of You</h2>
+      <p class="section-subtitle">My absolute favorites, because you're the most beautiful soul</p>
+      <div class="gallery-grid favorites-grid">
+
+        <article class="photo-card fav-card" id="fav-card-1">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/my%20small%20princess.jpeg" alt="Favorite 1" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">my small princess</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-2">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20favourite%20girl.jpeg" alt="Favorite 2" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My favourite girl</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-3">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20artist%201.jpeg" alt="Favorite 3" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My artist 1</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-4">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20princess%20has%20grown%20up.jpeg" alt="Favorite 4" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My princess has grown up</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-5">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/my%20little%20bride.jpeg" alt="Favorite 5" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">my little bride</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-6">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20princess%20has%20grown%20up%202.jpeg" alt="Favorite 6" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My princess has grown up 2</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-7">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/my%20little%20princess.png" alt="Favorite 7" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">my little princess</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-8">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/the%20best%20Eid%20ever%20with%20you.jpeg" alt="Favorite 8" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">the best Eid ever with you</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-9">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20princess%20has%20grown%20up%203.jpeg" alt="Favorite 9" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My princess has grown up 3</p>
+        </article>
+
+        <article class="photo-card fav-card" id="fav-card-10">
+          <div class="photo-slot">
+            <img class="uploaded-photo" src="images/favorites/My%20artist%202.jpeg" alt="Favorite 10" style="display:block; opacity:1;" />
+          </div>
+          <p class="photo-caption fav-caption">My artist 2</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== SECTION D: BESTIE GAME ===== -->
+    <section class="section game-section" id="bestie-game" aria-label="Are we okay game">
+      <h2 class="game-section-title" id="gameSectionTitle">Will you still be my bestie? 🥺</h2>
+
+      <div class="game-card" id="gameCard" aria-live="polite">
+        <div class="game-illustration-wrap" id="gameIllustrationWrap">
+          <img
+            id="gameIllustration"
+            src="images/favorites/My%20favourite%20girl.jpeg"
+            alt="My bestie smiling warmly"
+            class="game-illustration"
+          />
+          <!-- Celebration overlay (hidden by default) -->
+          <div class="celebrate-overlay" id="celebrateOverlay" aria-hidden="true">
+            <div class="celebrate-emoji">🎊</div>
+            <div class="celebrate-emoji delay-1">🎉</div>
+            <div class="celebrate-emoji delay-2">💖</div>
+            <div class="celebrate-emoji delay-3">🎊</div>
+          </div>
+        </div>
+
+        <div class="game-question-wrap">
+          <p class="game-question" id="gameQuestion">Will You Still Be My Bestie? 🥺</p>
+        </div>
+
+        <div class="game-buttons-area" id="gameButtonsArea">
+          <button class="game-btn yes-btn" id="yesBtn" aria-label="Yes, I will be your bestie">Yes ❤️</button>
+          
+          <div class="no-btn-wrapper" id="noBtnWrapper">
+            <button class="game-btn no-btn" id="noBtn" aria-label="No, I won't">No 🥺</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with an endless amount of love and apologies 💖</p>
+    <p class="footer-small">You're my favorite person forever.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
